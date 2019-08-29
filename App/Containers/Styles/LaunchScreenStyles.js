@@ -1,18 +1,18 @@
 import { StyleSheet } from 'react-native'
-import { Metrics, ApplicationStyles } from '../../Themes/'
 
 export default StyleSheet.create({
-  ...ApplicationStyles.screen,
   container: {
-    paddingBottom: Metrics.baseMargin
+    backgroundColor: 'white',
+    width: '100%',
+    height: '100%',
   },
-  logo: {
-    marginTop: Metrics.doubleSection,
-    height: Metrics.images.logo,
-    width: Metrics.images.logo,
-    resizeMode: 'contain'
+  backgroundContainer: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)'
   },
-  centered: {
-    alignItems: 'center'
+  text: {
+    color: 'black'
   }
 })
